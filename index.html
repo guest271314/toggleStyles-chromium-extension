@@ -174,7 +174,19 @@ function toggleStyles($) {
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
+<script type="text/javacript">
+  if (!!window.jquery) {
+/jquery/.test($("html").get(0).dataset.progress) 
+? $('<em>'
++$('html').get(0).dataset.progress
++'<br />'
++' '+$('html').get(0).dataset.status+'</br />'
++'`𝗦𝗛𝗜𝗙𝗧` toggles styles on or off</em>')
+.css({'fontSize': '12px', 'color':'green'})
+.appendTo('#main_content') : "!jquery"
+}
+  </script>
+</script>
    
   </body>
 </html>
