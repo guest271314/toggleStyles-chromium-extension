@@ -18,4 +18,4 @@
   
   Download: [toggleStyles-chromium-extension](https://github.com/guest271314/toggleStyles-chromium-extension/zipball/master)
   
-  Project: [toggleStyles.js - chromium-extension - project](http://guest271314.github.io/toggleStyles-chromium-extension/)
+  Project: [toggleStyles.js - chromium-extension](http://guest271314.github.io/toggleStyles-chromium-extension/)
