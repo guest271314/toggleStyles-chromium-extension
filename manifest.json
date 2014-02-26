@@ -1,0 +1,28 @@
+{
+  "name": "toggleStyles-chromium by guest271314",
+  "description": "Toggle CSS on or off in browser",
+  "version": "2.0",
+  "permissions": [
+    "activeTab"
+  ],
+"icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+"author": [ {
+  "name": "guest271314",
+  "website": "guest271314.com",
+  "github" : "https://github.com/guest271314/toggleStles-chromium-extension"
+ } ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "toggleStyles.js by guest271314\nToggle CSS on or off in browser\nClick `𝘁𝘀` icon to activate in tab\n`𝗦𝗛𝗜𝗙𝗧` toggles styles on or off",
+"default_icon": {                   
+      "19": "icon19.png",          
+      "38": "icon38.png"    
+    }
+  },
+  "manifest_version": 2
+}
