@@ -1,4 +1,4 @@
-[icon48](https://f.cloud.github.com/assets/4174848/2267156/fa930846-9eae-11e3-8898-08071bd8fe11.png)
+![icon48](https://f.cloud.github.com/assets/4174848/2267156/fa930846-9eae-11e3-8898-08071bd8fe11.png)
   
   toggleStyles.js Copyright (C) 2013, 2014 guest271314 http://guest271314.com
   
