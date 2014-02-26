@@ -1,3 +1,5 @@
+  ![iicon16](https://f.cloud.github.com/assets/4174848/2266601/816b5a7e-9e9d-11e3-8392-cdbbb1cc0e22.png)
+  
   toggleStyles.js Copyright (C) 2013, 2014 guest271314 http://guest271314.com
   
   Toggle CSS on or off in browser.
