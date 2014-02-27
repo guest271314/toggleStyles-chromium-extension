@@ -20,7 +20,8 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
     /* Usage: toggleStyles() */
-;(function toggleStyles($, window, undefined) {
+$(function() {
+(function toggleStyles($, window, undefined) {
     $('html')[0].dataset.description = 'toggleStyles.js Copyright (C) 2013, 2014 guest271314 http://guest271314.com https://github.com/guest271314/toggleStyles\nToggle CSS on or off in browser\nClick `𝘁𝘀` icon to activate in tab\n`𝗦𝗛𝗜𝗙𝗧` toggles styles on or off';
     $('html')[0].dataset.progress = 'jquery ' + window.jQuery().jquery + ' ready at ' + (new Date()).toJSON();
     /* Save author styles, clear author styles, log success.     
@@ -61,7 +62,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
             if (toggle.which === 16) {       
                 var _style = ('styles on' === $('html').data('styleStatus') ? clearStyle() : resetStyle());
             }; return _style
-        }); return $('html').data('styleStatus') + ' ' + $('html')[0].dataset.progress
-        +'\n'+ $('html')[0].dataset.description;
+        }); return window.console.log($('html').data('styleStatus') + ' ' + $('html')[0].dataset.progress
+        +'\n'+ $('html')[0].dataset.description);
     }()); 
 }(jQuery, window))
+})
