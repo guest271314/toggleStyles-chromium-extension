@@ -1,4 +1,3 @@
-
  /*! toggleStyles.js (c) 2013, 2014 guest271314 http://guest271314.com https://github.com/guest271314/toggleStyles
 * Toggle styles on or off in browser.
 * License: BSD http://www.opensource.org/licenses/BSD-3-Clause
@@ -63,8 +62,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
             if (toggle.which === 16) {       
                 var _style = ('styles on' === $('html').data('styleStatus') ? clearStyle() : resetStyle());
             }; return _style
-        }); return $('html').data('styleStatus') + ' ' + $('html')[0].dataset.progress
-        +'\n'+ $('html')[0].dataset.description;
+        }); return window.console.log($('html').data('styleStatus') + ' ' + $('html')[0].dataset.progress
+        +'\n'+ $('html')[0].dataset.description);
     }()); 
 }(jQuery, window))
 })
