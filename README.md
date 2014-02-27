@@ -15,3 +15,7 @@
   Usage: Click `𝘁𝘀` icon to activate in tab, `𝗦𝗛𝗜𝗙𝗧` toggles styles on or off
   
   Version: chromium-extension https://github.com/guest271314/toggleStyles-chromium-extension
+  
+  Download: [toggleStyles-chromium-extension](https://github.com/guest271314/toggleStyles-chromium-extension/zipball/master)
+  
+  Project: [toggleStyles.js - chromium-extension](http://guest271314.github.io/toggleStyles-chromium-extension/)
