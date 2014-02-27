@@ -3,7 +3,7 @@
 * License: BSD http://www.opensource.org/licenses/BSD-3-Clause
 * Reference: http://superuser.com/questions/447269/is-there-any-way-to-view-a-webpage-without-styles-in-chrome 
 * Depends: jQuery http://jquery.com
-* Updated: 2014-02-08
+* Updated: 2014-02-26
 * Version: chromium-extension
 
 Copyright (c) 2014, guest271314
@@ -55,15 +55,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
         $('html').data('styleStatus', 'styles on');
         $('html')[0].dataset.status = 'styles on';
         $('html')[0].dataset.version = 'chromium extension';
-        /* Log style status at console (optioanl) */
-        window.console.log($('html').data('styleStatus') + ' ' + $('html')[0].dataset.progress
-        +'\n'+ $('html')[0].dataset.description);
         $('body').on('keydown', 
         function(toggle, _style) {
         /* `Shift` key */
             if (toggle.which === 16) {       
                 var _style = ('styles on' === $('html').data('styleStatus') ? clearStyle() : resetStyle());
             }; return _style
-        }); return $('html')[0].dataset.description
+        }); return $('html').data('styleStatus') + ' ' + $('html')[0].dataset.progress
+        +'\n'+ $('html')[0].dataset.description;
     }()); 
 }(jQuery, window))
